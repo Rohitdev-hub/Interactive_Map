@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.map-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.search-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#search-input {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  width: 300px;
+  max-width: 100%;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#map {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.legend {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.legend h3 {
+  margin: 0 0 8px 0;
+  font-size: 1rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+
+.legend-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.legend-icon.park {
+  background-color: #34c3e7;
+}
+
+.legend-icon.museum {
+  background-color: #212b9c;
+}
+
+.legend-icon.restaurant {
+  background-color: #e74c3c;
+}
+
+.legend-icon.landmark {
+  background-color: #adbc0d;
+}
+
+.popup-image {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.popup-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.popup-description {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.popup-category {
+  display: inline-block;
+  padding: 2px 6px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 1.4rem;
+  }
+
+  .search-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #search-input {
+    width: 90%;
+  }
+
+  button {
+    width: 90%;
+  }
+
+  .legend {
+    bottom: 10px;
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="map-container">
+        <div class="header">
+            <h1>Explore Interesting Locations</h1>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search locations...">
+                <button id="search-btn">Search</button>
+                <button id="current-location">My Location</button>
+            </div>
+        </div>
+        <div id="map"></div>
+        <div class="legend">
+            <h3>Legend</h3>
+            <div class="legend-item"><span class="legend-icon park"></span> Park</div>
+            <div class="legend-item"><span class="legend-icon museum"></span> Museum</div>
+            <div class="legend-item"><span class="legend-icon restaurant"></span> Restaurant</div>
+            <div class="legend-item"><span class="legend-icon landmark"></span> Landmark</div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
